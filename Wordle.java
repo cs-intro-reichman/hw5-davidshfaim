@@ -162,7 +162,7 @@ public class Wordle {
         }
 
         if (!won) {
-          System.out.println("You lose. The corrent word was: " + secret);
+          System.out.println("You lost. The correct word was: " + secret);
             // ... follow the assignment examples for how the printing should look like
         }
 
