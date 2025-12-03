@@ -4,7 +4,8 @@ public class Wordle {
     public static String[] readDictionary(String filename) {
 	In in = new In(filename);
     String wordl = in.readAll();
-    String[] words = wordl.split("\\s+");
+    
+    String[] words = wordl.trim().split("\\s+");
 
     return words;
 }
@@ -163,11 +164,11 @@ public class Wordle {
 
         if (!won) {
           System.out.println("You lost.");
-    System.out.println("The correct word was: " + secret);
+          System.out.println("The correct word was: " + secret);
             // ... follow the assignment examples for how the printing should look like
         }
 
 
-        inp.close();
+    inp.close();
     }
 }
